@@ -2,12 +2,12 @@
 
 # Инструкция по запуску планировщика задач:
 
-1. Установка:
+# Установка:
 
-    Установите Python 3.7+
-    Установите Django 3.2+
-    Установите SQLite 3+
-    Создайте виртуальное окружение Python:
+    1. Установите Python 3.7+
+    2. Установите Django 3.2+
+    3. Установите SQLite 3+
+    4. Создайте виртуальное окружение Python:
 
 python -m venv venv
 
@@ -19,7 +19,7 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-2. Настройка:
+# Настройка:
 
     Создайте файл .env в корне проекта.
     Добавьте в него следующие переменные:
@@ -29,13 +29,13 @@ DEBUG=<True|False>
 ALLOWED_HOSTS=<comma_separated_list_of_allowed_hosts>
 DATABASE_URL=sqlite:///db.sqlite3
 
-3. Запуск:
+# Запуск:
 
     Запустите сервер Django:
 
 python manage.py runserver
 
-4. Использование:
+# Использование:
 
     Откройте браузер и перейдите по адресу http://localhost:8000/.
 
@@ -47,7 +47,7 @@ python manage.py runserver
         PUT /api/tasks/<id>/ - Редактировать задачу
         DELETE /api/tasks/<id>/ - Удалить задачу
 
-5. Примеры использования:
+# Примеры использования:
 
     Добавить задачу:
 
